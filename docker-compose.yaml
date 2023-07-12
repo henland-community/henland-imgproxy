@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  henland-img:
+    container_name: henland-img
+    image: darthsim/imgproxy:latest
+    #hostname:
+    #environment:
+    #  -
+    #command: sh -c ''
+    restart: always
+    #volumes:
+    #  - ./tmp:/tmp
+    ports:
+      - 8088:8080
