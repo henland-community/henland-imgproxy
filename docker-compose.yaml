@@ -5,8 +5,8 @@ services:
     container_name: henland-img
     image: darthsim/imgproxy:latest
     #hostname:
-    #environment:
-    #  -
+    environment:
+      - IMGPROXY_SOURCE_URL_PREFIX="https://ipfs.io/ipfs/"
     #command: sh -c ''
     restart: always
     #volumes:
